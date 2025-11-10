@@ -10,7 +10,8 @@
 # joblist="151X_noHCALStep 151X_rerunHCALStep 151X_newHCALStep 151pre4_P2GT"
 # joblist="151X_noHCALStep_retry 151X_rerunHCALStep_retry 151X_newHCALStep_retry 151pre4_P2GT_retry 151pre4_P2GTupdate1"
 # joblist="151pre4_P2GT_retry 151pre4_P2GTupdate1"
-joblist="151pre4_P2GTupdate2"
+# joblist="151pre4_P2GTupdate2"
+joblist="151pre4_P2GTupdate4"
 
 revision=8pm
 RESUBMIT=$1
