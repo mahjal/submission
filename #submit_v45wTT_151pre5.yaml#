@@ -1,0 +1,26 @@
+# submit_v45wTT_151pre5.yaml
+job_name: v45wTT_151pre5
+output_dir_base: /eos/cms/store/group/dpg_trigger/comm_trigger/L1Trigger/mjalalva/phase2/menu/ntuples/Spring24
+
+cmssw_release: CMSSW_15_1_0_pre5
+scram_arch: el9_amd64_gcc12
+
+cmsrun_cfg: cmsrun/v45_rerunL1wTT_D121_NNVtx_cfg.py
+
+splitting: FileBased
+unitsPerJob: 1
+totalUnits: -1     # all files
+
+site_whitelist: []
+site_blacklist: []
+
+# IMPORTANT: replace these dataset paths with the same ones you used for pre4
+datasets:
+  - name: DYLL_M50
+    dataset: /DYToLL_M-50_TuneCP5_14TeV_pythia8/Phase2HLTTDRWinter24MiniAOD-*/NANOAODSIM
+  - name: Hgg
+    dataset: /GluGluHToGG_M-125_14TeV_powheg_pythia8/Phase2HLTTDRWinter24MiniAOD-*/NANOAODSIM
+  - name: TTbar
+    dataset: /TT_TuneCP5_14TeV-powheg-pythia8/Phase2HLTTDRWinter24MiniAOD-*/NANOAODSIM
+  - name: MinBias
+    dataset: /MinBias_TuneCP5_14TeV-pythia8/Phase2HLTTDRWinter24MiniAOD-*/NANOAODSIM

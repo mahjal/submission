@@ -1,14 +1,19 @@
 # INPUT=$1
 # INPUTS="151X_preHCAL 151X_postHCAL"
-INPUTS="151X_AllAR25_FindOn"
+
+# INPUTS="151pre4"
+# INPUTS="151pre5"		
+INPUTS="151pre6"
+
 
 REVISION="250721"
 
 TEMP=$(mktemp -d)
 echo "Temp directory is $TEMP"
 
+
 MAX_JOBS=12
-PARENTDIR="/eos/cms/store/group/dpg_trigger/comm_trigger/L1Trigger/roward/phase2/menu/ntuples/Spring24"
+PARENTDIR="/eos/cms/store/group/dpg_trigger/comm_trigger/L1Trigger/mjalalva/phase2/menu/ntuples/Spring24"
 
 for INPUT in $INPUTS; do
     echo "INPUT: $INPUT" |& tee logs/hadd_${INPUT}_${REVISION}.log
